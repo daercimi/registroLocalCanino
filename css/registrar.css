@@ -1,0 +1,27 @@
+#section{
+    width: 500px;
+    padding: 15px;
+}
+
+form{
+    font-size: large;
+}
+
+input, select{
+    font-size: large;
+    background:none;
+    border-radius: 10px;
+    font-family: inherit;
+}
+
+input:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+select:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#cancelar{
+    font-size:large;
+}

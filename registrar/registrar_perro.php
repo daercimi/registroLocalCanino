@@ -3,7 +3,7 @@
 
 if (!array_key_exists("Registrar",$_POST)){
     ob_start();
-    header('Location: '.'index.html');
+    header('Location: '.'../main.html');
     ob_end_flush();
     die();
 }
@@ -59,7 +59,7 @@ else{
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css"></link>
+    <link rel="stylesheet" href="../css/index.css"></link>
 
     <title>Registro Local Canino</title>
 </head>
@@ -73,7 +73,7 @@ else{
             <a href="registrar.html">
                 <button id="registrar"><?php echo $reg?></button>
             </a>
-            <a href="consultar.html">
+            <a href="../consultar/consultar.html">
                 <button id="consultar">Consultar en la BD</button>
             </a>
         </section>

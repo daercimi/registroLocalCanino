@@ -88,8 +88,8 @@ if($check){
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css"></link>
-    <link rel="stylesheet" href="css/results.css"></link>
+    <link rel="stylesheet" href="../css/index.css"></link>
+    <link rel="stylesheet" href="../css/results.css"></link>
 
     <title>Registro Local Canino</title>
 </head>
@@ -100,7 +100,7 @@ if($check){
     <main id="main">
         <section id="section" class="centrado-vh">
             <?php echo $msg?>
-            <a href="registrar.html">
+            <a href="../registrar/registrar.html">
                 <button id="registrar">Registrar a mi perro</button>
             </a>
             <a href="consultar.html">

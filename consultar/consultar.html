@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css"></link>
+    <link rel="stylesheet" href="../css/consultar.css"></link>
+    
+    <title>Consultar BD de Canes</title>
+</head>
+<body>
+    <header id="header" class="centrado-vh">
+        <h1 id="bienvenido">Realiza tus consultas</h1>
+    </header>
+    <main id="main">
+        <section id="section" class="centrado-vh">
+            <form action="consultar_perro.php" method="POST"> 
+                <input type="hidden" name="gaaa" value="gaaa">
+                Ingresar Nombre a buscar 
+                <Input Type = Text name = "Nombre" ></P>
+                <Input name="Buscar" Type = Submit value = "Buscar"></P>
+
+                Consultas Populares
+                <div id="faq">        
+                    <Input name="Mestizos" Type = Submit value = "Perros Mestizos">
+                    <Input name="Pitbull" Type = Submit value = "Perros Pitbull">
+                </div>
+            </form>
+        </section>
+        <footer id="footer" class="centrado-vh">
+            <span>Creado por Daniel Cifuentes</span>
+        </footer>
+    </main>
+</body>
+</html>

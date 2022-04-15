@@ -29,17 +29,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: fit-content;
+    min-height: 500px;
     width: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.5), #a6c358);
+    /* position: fixed; */
 }
 
 #section{
     display: flex;
+    padding: 10px;
     flex-direction: column;
     justify-content: space-around;
 
-    height: 300px;
+    min-height: 300px;
     width: 300px;
 
     border-radius: 20px;
@@ -48,7 +51,7 @@ body{
 }
 
 button{
-    font-size: larger;
+    font-size: large;
     background:none;
     border-radius: 10px;
     font-family: inherit;
@@ -60,8 +63,8 @@ button:hover{
 
 #footer{
     background-color: rgba(166,195,88,1);
-    height: 93px;
     width: 100%;
+    height: 50px;
     position: fixed;
     bottom: 0px;
 }

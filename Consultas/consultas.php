@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["Logged"])){
+        header("Location: index.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,25 +16,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css"></link>
+    <link rel="stylesheet" href="../css/index.css"></link>
 
     <title>Registro Local Canino</title>
 </head>
 <body>
     <header id="header" class="centrado-vh">
-        <h1 id="bienvenido">¡Bienvenido!</h1>
+        <h1 id="bienvenido">Consultas</h1>
     </header>
     <main id="main">
         <h2 id="quehacer">¿Qué deseas hacer?</h2>
         <section id="section" class="centrado-vh">
-            <a href="consultar/consultar.html">
-                <button id="consultar">Sobre mi mascota</button>
+            <a href="formNuevaConsulta.php">
+                <button id="nuevaConsulta">Nueva Consulta/Cita</button>
             </a>
-            <a href="login/login.html">
-                <button id="login">Iniciar sesión (Vet)</button>
+            <a href="formRevisarConsultas.php">
+                <button id="registrarMascota">Revisar Consultas/Citas</button>
             </a>
-            <a href="signup/signup.html">
-                <button id="signup">Registrarme (Vet)</button>
+            <a href="../main.php">
+                <button id="regresar">Regresar</button>
             </a>
         </section>
         <footer id="footer" class="centrado-vh">

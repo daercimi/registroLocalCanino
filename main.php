@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["Logged"])){
+        header("Location: index.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,19 +22,25 @@
 </head>
 <body>
     <header id="header" class="centrado-vh">
-        <h1 id="bienvenido">¡Bienvenido!</h1>
+        <h1 id="bienvenido">¡Bienvenido! <?php echo $_SESSION["Nombre"]?></h1>
     </header>
     <main id="main">
         <h2 id="quehacer">¿Qué deseas hacer?</h2>
         <section id="section" class="centrado-vh">
+            <a href="Consultas/consultas.php">
+                <button id="consultas">Consultas</button>
+            </a>
+            <a href="registrar/registrar.php">
+                <button id="registrarMascota">Registrar una mascota</button>
+            </a>
+            <a href="Medicamentos/medicamentos.php">
+                <button id="registrarMedicamento">Medicamentos</button>
+            </a>
             <a href="consultar/consultar.html">
-                <button id="consultar">Sobre mi mascota</button>
+                <button id="buscarMascotas">Buscar Mascotas</button>
             </a>
-            <a href="login/login.html">
-                <button id="login">Iniciar sesión (Vet)</button>
-            </a>
-            <a href="signup/signup.html">
-                <button id="signup">Registrarme (Vet)</button>
+            <a href="login/logout.php">
+                <button id="logout">Cerrar Sesión</button>
             </a>
         </section>
         <footer id="footer" class="centrado-vh">

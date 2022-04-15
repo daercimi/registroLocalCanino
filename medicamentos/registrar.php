@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["Logged"])){
+        header("Location: index.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,24 +19,26 @@
     <link rel="stylesheet" href="../css/index.css"></link>
     <link rel="stylesheet" href="../css/registrar.css"></link>
 
-    <title>Inicie sesión</title>
+    <title>Registra el medicamento</title>
 </head>
 <body>
     <header id="header" class="centrado-vh">
-        <h1 id="bienvenido">Inicie sesión</h1>
+        <h1 id="bienvenido">Registra un nuevo medicamento</h1>
     </header>
     <main id="main">
         <section id="section" class="centrado-vh">
-            <form action="login.php" method="POST"> 
-                Ingrese su DNI
-                <Input name = "DNI" type="dni"></P>
-                Ingrese su Constraseña
-                <Input name = "pw" type="password"></P>
+            <form id="formulario" action="actNuevoMed.php" method="POST"> 
+                Ingresar Codigo 
+                <Input name = "Codigo" Type Text></P>
+                Ingresar Nombre 
+                <Input name = "Nombre" Type Text></P>
+                Ingresar Precio por unidad
+                <Input name= "Precio" Type = "Number" step="0.01"></P>
 
-                <Input name= "Login" Type = Submit value = "Listo"> 
-                <a href="../index.html">
-                    <button id="cancelar">Cancelar</button>
-                </a>
+                <Input name= "Registrar" Type = Submit value = "Registrar" id="Registrar">
+                <a href="../main.php">
+                    <button id="Cancelar">Cancelar</button>
+                </a> 
             </form>
         </section>
     </main>

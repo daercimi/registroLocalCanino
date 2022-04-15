@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="../css/index.css"></link>
     <link rel="stylesheet" href="../css/registrar.css"></link>
+    <link rel="stylesheet" href="../css/signup.css"></link>
 
     <title>Registrate como veterinario</title>
 </head>
@@ -22,13 +23,17 @@
         <section id="section" class="centrado-vh">
             <form action="signup.php" method="POST"> 
                 Ingresar DNI
-                <Input name = "Codigo" Type Text></P>
+                <Input name = "DNI" Type Text></P>
                 Ingresar Nombre
                 <Input name = "Nombre" Type Text></P>
+                Ingresar Apellido
+                <Input name = "Apellido" Type Text></P>
                 Ingresar Correo
                 <Input name = "Email" type="email"></P>
+                Ingresar Teléfono
+                <Input name = "Teléfono" type="text" ></P>
                 Ingresar Constraseña
-                <Input name = "pw" type="password"></P>
+                <Input name = "pw" type="password" placeholder="8 char. 1 mayus, 2 special, 2 (0-9)"></P>
                 Vuelva a ingresar su contraseña
                 <Input name = "pw2" type="password"></P>
                 <Input name= "Signup" Type = Submit value = "Signup">

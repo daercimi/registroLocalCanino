@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION["Logged"])){
+        header("Location: index.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,32 +19,23 @@
     <link rel="stylesheet" href="../css/index.css"></link>
     <link rel="stylesheet" href="../css/consultar.css"></link>
     
-    <title>Consultar BD de Canes</title>
+    <title>Ver medicamentos</title>
 </head>
 <body>
     <header id="header" class="centrado-vh">
-        <h1 id="bienvenido">Realiza tus consultas</h1>
+        <h1 id="bienvenido">Buscar medicamentos</h1>
     </header>
     <main id="main">
         <section id="section" class="centrado-vh">
-            <form action="actConsultar.php" method="POST"> 
+            <form action="actVerMedicamentos.php" method="POST"> 
                 <label for="Código">Código</label>
-                <input type="text" name="ID" placeholder="DNI">
-                <input name="submitCódigo" type="submit" value="Buscar por Dueño"></P>
-
+                <input type="text" name="ID">
+                <input name="submitCódigo" type="submit" value="Buscar por Código"></P>
                 <label for="Nombre">Nombre</label>
                 <input type="text" name="Nombre">
                 <input name="submitNombre" type="submit" value="Buscar por Nombre"></P>
-
-                <label for="Especie">Especie</label>
-                <input type="text" name="Especie">
-                <input name="submitEspecie" type="submit" value="Buscar por Especie"></P>
-
-                <label for="Raza">Raza</label>
-                <input type="text" name="Raza">
-                <input name="submitRaza" type="submit" value="Buscar por Raza"></P>
             </form>
-            <a href="../main.php">
+            <a href="medicamentos.php">
                 <button id="consultar">Regresar</button>
             </a>
         </section>

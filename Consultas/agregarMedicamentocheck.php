@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION["Logged"])){
+        header("Location: ../index.html");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,25 +20,20 @@
     <link rel="stylesheet" href="../css/index.css"></link>
     <link rel="stylesheet" href="../css/registrar.css"></link>
 
-    <title>Inicie sesión</title>
+    <title>Listo</title>
 </head>
 <body>
     <header id="header" class="centrado-vh">
-        <h1 id="bienvenido">Inicie sesión</h1>
+        <h1 id="bienvenido">Detalle del medicamento añadido</h1>
     </header>
     <main id="main">
         <section id="section" class="centrado-vh">
-            <form action="login.php" method="POST"> 
-                Ingrese su DNI
-                <Input name = "DNI" type="dni"></P>
-                Ingrese su Constraseña
-                <Input name = "pw" type="password"></P>
-
-                <Input name= "Login" Type = Submit value = "Listo"> 
-                <a href="../index.html">
-                    <button id="cancelar">Cancelar</button>
-                </a>
-            </form>
+            <a href="agregarMedicamento.php">
+                <button id="agregarMedicamento">Añadir otro medicamento</button>
+            </a>
+            <a href="formRevisarConsultas.php">
+                <button id="revisarConsultas">Regresar a ver las consultas</button>
+            </a>
         </section>
     </main>
 

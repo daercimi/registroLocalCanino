@@ -15,7 +15,7 @@
 
 
     //conexion a la Base de datos (Servidor,usuario,password)
-    $conn = mysqli_connect("localhost", "root","", "relocaDB");
+    $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
     if (!$conn) {
         die("Error de conexion: " . mysqli_connect_error());
     }

@@ -19,7 +19,7 @@ else{
     $v3 = $_REQUEST['Precio'];
 
     if($v1 != NULL && $v2 != NULL && $v3 != NULL ){
-        $conn = mysqli_connect("localhost", "root","", "RelocaDB");
+        $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
         if (!$conn) {
             die("Error de conexion: " . mysqli_connect_error());
         }

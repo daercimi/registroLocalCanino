@@ -41,7 +41,7 @@
 
     //Registrar en la BD
     if($check){
-        $conn = mysqli_connect("localhost", "root","", "RelocaDB");
+        $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
         if (!$conn) {
             die("Error de conexion: " . mysqli_connect_error());
         }

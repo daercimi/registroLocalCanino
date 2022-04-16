@@ -18,7 +18,7 @@ else{
         $dni = $_POST['DNI'];
         $pw = $_POST['pw'];
     
-        $conn = mysqli_connect("localhost", "root",'', "relocadb");
+        $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
         if (!$conn) {
             $msg = "Error de conexion: " . mysqli_connect_error();
         }else{

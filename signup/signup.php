@@ -30,7 +30,7 @@ else{
     else{
         $pw = md5($pw);
 
-        $conn = mysqli_connect("localhost", "root",'', "relocadb");
+        $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
 
         $sql = "INSERT INTO veterinario (vet_id, vet_nombre, vet_apellido, vet_correo, vet_telefono, vet_contraseña)";
         $sql .= "VALUES ('$dni','$nombre','$apellido','$email', '$telefono', '$pw')"; 

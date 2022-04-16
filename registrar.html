@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css"></link>
+    <link rel="stylesheet" href="css/registrar.css"></link>
+
+    <title>Registra a tu perro</title>
+</head>
+<body>
+    <header id="header" class="centrado-vh">
+        <h1 id="bienvenido">¡Registra a tu perro!</h1>
+    </header>
+    <main id="main">
+        <section id="section" class="centrado-vh">
+            <form action="registrar_perro.php" method="POST"> 
+                Ingresar Codigo 
+                <Input name = "Codigo" Type Text></P>
+                Ingresar Nombre 
+                <Input name = "Nombre" Type Text></P>
+                Fecha de Nacimiento 
+                <Input name= "FechNac" Type = "Date"></P>
+                Genero 
+                <Input name="Genero" Type = "Radio"> Macho 
+                <Input name= "Genero" Type = "Radio"> Hembra
+                <Input name= "Genero" Type = "Radio"> No sabe</P>
+
+                Seleccione Raza 
+                <Select name = "Raza">
+
+                    <Option value = "Bulldog"> Bulldog
+                    <Option value = "Chiguahua"> Chiguahua 
+                    <Option value = "Peruano"> Peruano
+                    <Option value = "Pequines"> Pequines
+                    <Option value = "Pitbull"> Pitbull
+                    <Option value = "San Bernardo"> San Bernardo 
+                    <Option value = "Shichu"> Shichu 
+                    <Option value = "Mestizo"> Mestizo 
+                    <Option value = "Otro"> Otro
+                </Select></P>
+                Subir Foto 
+                <Input Type = "file" name = "Foto" placeholder=""> 
+                    <br>
+                <Input name= "Registrar" Type = Submit value = "Registrar"> 
+                <a href="index.html">
+                    <button id="cancelar">Cancelar</button>
+                </a>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer" class="centrado-vh">
+        <span>Creado por Daniel Cifuentes</span>
+    </footer>
+</body>
+</html>

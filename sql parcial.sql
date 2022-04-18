@@ -13,8 +13,8 @@
 
 
 -- Volcando estructura de base de datos para relocadb
-CREATE DATABASE IF NOT EXISTS `relocadb` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
-USE `relocadb`;
+CREATE DATABASE IF NOT EXISTS `sql10486087` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `sql10486087`;
 
 -- Volcando estructura para tabla relocadb.consulta
 CREATE TABLE IF NOT EXISTS `consulta` (

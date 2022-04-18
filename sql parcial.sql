@@ -124,13 +124,13 @@ CREATE TABLE IF NOT EXISTS `veterinario` (
   `vet_apellido` varchar(30) NOT NULL,
   `vet_correo` varchar(25) DEFAULT NULL,
   `vet_telefono` varchar(15) DEFAULT NULL,
-  `vet_contraseña` varchar(256) DEFAULT NULL,
+  `vet_contrasena` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`vet_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Volcando datos para la tabla relocadb.veterinario: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `veterinario` DISABLE KEYS */;
-REPLACE INTO `veterinario` (`vet_id`, `vet_nombre`, `vet_apellido`, `vet_correo`, `vet_telefono`, `vet_contraseña`) VALUES
+REPLACE INTO `veterinario` (`vet_id`, `vet_nombre`, `vet_apellido`, `vet_correo`, `vet_telefono`, `vet_contrasena`) VALUES
 	('72976158', 'Daniel', 'Cifuentes', 'daercimi@gmail.com', '973198435', '8036c843231e91821faf49058d57a68a');
 /*!40000 ALTER TABLE `veterinario` ENABLE KEYS */;
 

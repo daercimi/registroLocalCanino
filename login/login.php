@@ -30,7 +30,7 @@ else{
             }else{
                 for ($i=0; $i <$num_emails; $i++) {
                     $row = mysqli_fetch_array($result);
-                    if(!(md5($pw) == $row["vet_contraseña"])){
+                    if(!(md5($pw) == $row["vet_contrasena"])){
                         $msg = "Contraseña incorrecta";
                     }
                     else{

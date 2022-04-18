@@ -40,12 +40,13 @@ else{
             die("Error de conexion: " . mysqli_connect_error());
         }
 
-        $sqlDueño = "SELECT due_id FROM dueño WHERE due_id = '".$v1."';";
+        $sqlDueño = "SELECT due_id FROM dueno WHERE due_id = '".$v1."';";
         $dniDueño = "";
         if (mysqli_query($conn, $sqlDueño)) {
             $result = mysqli_query($conn, $sqlDueño);
             $row = mysqli_fetch_array($result);
             if(gettype($row) == 'NULL'){
+                setcookie("mascota", json_encode($_REQUEST));
                 ob_start();
                 header('Location: '.'registrarDueño.php');
                 ob_end_flush();

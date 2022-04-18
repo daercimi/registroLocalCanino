@@ -32,8 +32,8 @@ else{
 
         $conn = mysqli_connect("sql10.freemysqlhosting.net", "sql10486087","aFXPWBC5ZG", "sql10486087");
 
-        $sql = "INSERT INTO veterinario (vet_id, vet_nombre, vet_apellido, vet_correo, vet_telefono, vet_contraseña)";
-        $sql .= "VALUES ('$dni','$nombre','$apellido','$email', '$telefono', '$pw')"; 
+        $sql = "INSERT INTO veterinario (vet_id, vet_nombre, vet_apellido, vet_correo, vet_telefono, vet_contrasena)";
+        $sql .= " VALUES ('$dni','$nombre','$apellido','$email', '$telefono', '$pw')"; 
         if (mysqli_query($conn, $sql)) {
             $msg = "Registro correcto";
             $check = True;
